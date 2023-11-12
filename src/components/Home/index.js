@@ -5,6 +5,7 @@ import { useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect } from 'react'
 import Logo from './Logo'
+import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -31,6 +32,7 @@ const Home = () => {
     'e',
     'e',
     'r',
+    '.',
   ]
 
   useEffect(() => {
@@ -71,6 +73,7 @@ const Home = () => {
         <Logo />
 
       </div>
+      <Loader type='pacman' />
     </>
   )
 }
