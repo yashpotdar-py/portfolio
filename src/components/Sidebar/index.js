@@ -4,7 +4,6 @@ import LogoS from '../../assets/images/Y.png'
 import LogoSubtitle from '../../assets/images/Y_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faBars,
   faEnvelope,
   faHome,
   faUser,

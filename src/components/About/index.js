@@ -4,18 +4,13 @@ import './index.scss'
 import { useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faCss3,
   faGitAlt,
   faGithub,
   faHtml5,
-  faJsSquare,
   faLinux,
-  faNodeJs,
   faPython,
   faReact,
-  faUbuntu,
 } from '@fortawesome/free-brands-svg-icons'
-import { faXmarksLines } from '@fortawesome/free-solid-svg-icons'
 import Loader from 'react-loaders'
 
 const About = () => {
