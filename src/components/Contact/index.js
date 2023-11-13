@@ -1,17 +1,43 @@
 import Loader from 'react-loaders'
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const form = useRef()
 
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_k7ym4kr',
+        'template_platkrt',
+        form.current,
+        '6jBqCrwpnyIdS5lT8'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+          alert('Message Sent!')
+          window.location.reload(false)
+        },
+        (error) => {
+          alert('Failed to send the message, please try again')
+          console.log(error.text)
+        }
+      )
+  }
+
   return (
     <>
       <div className="container contact-page">
@@ -37,7 +63,7 @@ const Contact = () => {
           </p>
 
           <div className="contact-form">
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
                   <input type="text" name="name" placeholder="Name" required />
@@ -62,7 +88,7 @@ const Contact = () => {
                   <textarea placeholder="Message" name="message" required />
                 </li>
                 <li>
-                    <input type='submit' className='flat-button' value="SEND" />
+                  <input type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
             </form>
