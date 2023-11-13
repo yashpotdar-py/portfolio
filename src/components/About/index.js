@@ -87,7 +87,7 @@ const About = () => {
         </div>
       </div>
     </div>
-    <Loader type='pacman' />    
+    <Loader type='line-scale' />    
     </>
   )
 }
