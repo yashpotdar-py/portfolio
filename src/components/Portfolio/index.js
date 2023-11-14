@@ -45,7 +45,7 @@ const Portfolio = () => {
     <>
       <div className="container portfolio-page">
         <div className="text-zone">
-          <h1>
+          <h1 className='page-title'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}

@@ -83,3 +83,16 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .container.portfolio-page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    .image-box {
+      height: 200px;
+      max-width: 50%;
+    }
+  }
+}

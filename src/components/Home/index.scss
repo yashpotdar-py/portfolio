@@ -73,8 +73,34 @@
     white-space: nowrap;
 
     &:hover {
-        background: #ffd700;
-        color: #333;
+      background: #ffd700;
+      color: #333;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1::before {
+    display: none;
+  }
+
+  .home-page {
+    .text-zone {
+      position: initial;
+      width: 100%;
+      transform: none;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
+  .flat-button {
+    float: none;
+    display: block;
+    margin: 20px auto auto;
+    width: 125px;
+  }
+  .logo-container {
+    display: none;
   }
 }

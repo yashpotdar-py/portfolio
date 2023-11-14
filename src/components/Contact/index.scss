@@ -43,6 +43,7 @@
         color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
+        border-radius: 4px;
     }
 
     textarea {
@@ -55,6 +56,7 @@
         padding:  20px;
         min-height: 150px;
         box-sizing: border-box;
+        border-radius: 4px;
     }
 
     .flat-button {
@@ -68,4 +70,8 @@
         float: right;
         border-radius: 5px;
     }
+}
+
+@media screen and (max-width: 1200px) {
+    
 }
