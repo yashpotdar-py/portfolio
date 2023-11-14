@@ -38,6 +38,7 @@
   animation-delay: 1s;
 }
 
+.portfolio-page,
 .contact-page,
 .about-page {
   .text-zone {
@@ -106,7 +107,7 @@
 
   .text-animate-hover {
     &:hover {
-        color: #fff;
+      color: #fff;
     }
   }
 }
