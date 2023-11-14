@@ -2,10 +2,11 @@ import Loader from 'react-loaders'
 import './index.scss'
 import { useState, useEffect } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
+import portfolioData from '../../data/portfolio.json'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-
+  console.log(portfolioData)
   useEffect(() => {
     return setTimeout(() => {
       setLetterClass('text-animate-hover')

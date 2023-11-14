@@ -1,0 +1,16 @@
+{
+    "portfolio" : [
+        {
+            "cover": "/portfolio/projects/flappy-bird.png",
+            "title": "Flappy Bird AI",
+            "description": "Python, PyGame, ML, AI",
+            "url": "https://github.com/yashpotdar-py/Flappy-Bird-AI"
+        },
+        {
+            "cover": "/portfolio/projects/credit-card-fraud-detection.png",
+            "title": "Credit Card Fraud Detection",
+            "description": "Python, Flask, HTML, CSS, Jupyter, SkLearn",
+            "url": "https://github.com/syntech-97/Fraud-Detection-Project"
+        }
+    ]
+}
