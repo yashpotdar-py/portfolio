@@ -38,6 +38,7 @@
   animation-delay: 1s;
 }
 
+.skills-page,
 .portfolio-page,
 .contact-page,
 .about-page {
@@ -121,6 +122,7 @@
     height: auto;
     min-height: auto;
 
+    &.skills-page,
     &.about-page,
     &.contact-page,
     &.portfolio-page {

@@ -48,7 +48,7 @@ const Portfolio = () => {
           <h1 className='page-title'>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+              strArray={"Portfolio".split("")}
               idx={15}
             />
           </h1>
