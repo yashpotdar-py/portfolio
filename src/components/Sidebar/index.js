@@ -5,15 +5,12 @@ import LogoSubtitle from '../../assets/images/Y_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
-  faBuildingCircleArrowRight,
   faClose,
-  faCog,
   faEnvelope,
   faEye,
   faHome,
   faSuitcase,
-  faUser,
-  faUserCog,
+  faUser
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
