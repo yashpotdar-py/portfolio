@@ -1,8 +1,29 @@
 .skills-page {
-    .text-zone {
-        strong,
-        .project-link{
-            color: #ffd700;
-        }
+  .text-zone {
+    strong,
+    .project-link {
+      color: #ffd700;
     }
+  }
+
+  .skills-sphere {
+    margin-left: 55%;
+    .tagcloud {
+      display: inline-block;
+      top: 0;
+      left: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+      letter-spacing: 0.0625em;
+      font-size: 1.3em;
+    }
+    .tagcloud--item {
+      color: #ffd700;
+
+      &:hover {
+        color: #fff;
+        transform: translateY(-3px);
+      }
+    }
+  }
 }

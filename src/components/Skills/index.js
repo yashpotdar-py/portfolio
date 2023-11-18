@@ -1,11 +1,43 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
 import { NavLink } from 'react-router-dom'
+import TagCloud from 'TagCloud'
 
 const Skills = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  useEffect(() => {
+    const container = '.tagcloud'
+    const texts = [
+      'HTML',
+      'CSS',
+      'Python',
+      'JavaScript',
+      'React.JS',
+      'EJS',
+      'Linux',
+      'Node.JS',
+      'JQuery',
+      'Git',
+      'GitHub',
+    ]
+    const options = {
+      radius: 300,
+      maxSpeed: 'fast',
+      initSpeed: 'fast',
+      keep: true,
+      loop: true,
+      lockX: true,
+      lockY: true,
+    }
+
+    TagCloud(container, texts, options)
+
+    return () => {
+      TagCloud(container, [], {})
+    }
+  }, [])
 
   useEffect(() => {
     return setTimeout(() => {
@@ -67,9 +99,8 @@ const Skills = () => {
           <p>
             <strong>Tech Stack:</strong> Expertise in HTML, CSS, and EJS for
             building visually appealing and user-friendly interfaces. Skilled in
-            Python, JavaScript, and NodeJS for developing robust backend
-            systems. Familiar with Linux Kernels, Ubuntu, and adept at
-            configuring and managing cloud resources.
+            Python, ReactJS, JavaScript, and NodeJS for developing robust
+            backend systems. Familiar with Linux Kernels and OS.
           </p>
 
           <p>
@@ -80,7 +111,11 @@ const Skills = () => {
             technology.
           </p>
         </div>
+        <div className="skills-sphere">
+          <span className="tagcloud"></span>
+        </div>
       </div>
+
       <Loader type="line-scale" />
     </>
   )
