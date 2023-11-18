@@ -23,7 +23,7 @@ const Skills = () => {
       'GitHub',
     ]
     const options = {
-      radius: 200,
+      radius: 300,
       maxSpeed: 'fast',
       initSpeed: 'fast',
       keep: true,
