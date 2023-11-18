@@ -8,7 +8,7 @@
         },
         {
             "cover": "/portfolio/projects/credit-card-fraud-detection.png",
-            "title": "Credit Card Fraud",
+            "title": "Credit Card Fraud Detection",
             "description": "Python, Flask, HTML, CSS, SkLearn",
             "url": "https://github.com/syntech-97/Fraud-Detection-Project"
         }
